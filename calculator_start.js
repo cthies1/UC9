@@ -9,7 +9,7 @@ function displayCurrentInput() {
 }
 /**
  * This function adds a digit to the current input
- * @param {number} dig      This is the number selected on the calculator
+ * @param {number} dig  This is the number selected on the calculator
  * @return {number} Returns the new currentInput
  */
 function addDigit(dig) {
@@ -52,7 +52,7 @@ function allClear() {
 }
 /**
  * This function stores the last operator pushed for multiply, divide, add, or subtract
- * @param {number} op       This is the operator that is being used
+ * @param {number} op   This is the operator that is being used
  * @return {number} Returns the new currentInput
  */
 function storeOperator(op) {
