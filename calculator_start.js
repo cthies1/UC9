@@ -52,8 +52,8 @@ function allClear() {
 }
 /**
  * This function stores the last operator pushed for multiply, divide, add, or subtract
- * @param {number} This is _____
- * @return {return} This returns _____
+ * @param {number} op  This is the operator that is being used
+ * @return {number} Returns the new currentInput
  */
 function storeOperator(op) {
     if (op.indexOf("*") > -1) {
@@ -133,7 +133,8 @@ function factorial() {
 }
 /**
  * This function calculates the square of the current input
- * @return {number} Returns the new currentInput
+ * @param {number} This is _____
+ * @return {return} This returns _____
  */
 function square() {
     currentInput = Math.pow(currentInput, 2);
@@ -141,7 +142,8 @@ function square() {
 }
 /**
  * This function calculates the square root of the current input
- * @return {number} Returns the new currentInput
+ * @param {number} This is _____
+ * @return {return} This returns _____
  */
 function squareRoot() {
     currentInput = Math.sqrt(currentInput);
@@ -149,7 +151,8 @@ function squareRoot() {
 }
 /**
  * This function calculates the inverse of the current input
- * @return {number} Returns the new currentInput
+ * @param {number} This is _____
+ * @return {return} This returns _____
  */
 function inverse() {
     currentInput = 1 / currentInput;
@@ -157,7 +160,8 @@ function inverse() {
 }
 /**
  * This function calculates the sine of the current input
- * @return {number} Returns the new currentInput
+ * @param {number} This is _____
+ * @return {return} This returns _____
  */
 function sin() {
     currentInput = Math.sin(currentInput);
@@ -165,14 +169,17 @@ function sin() {
 }
 /**
  * This function calculates the cosine of the current input
- * @return {number} Returns the new currentInput
+ * @param {number} This is _____
+ * @return {return} This returns _____
  */
 function cos() {
     currentInput = Math.cos(currentInput);
     displayCurrentInput();
 }
 /**
- * @return {number} Returns the new currentInput
+ * This function calculates the tangent of the current input
+ * @param {number} This is _____
+ * @return {return} This returns _____
  */
 function tan() {
     currentInput = Math.tan(currentInput);
@@ -180,7 +187,8 @@ function tan() {
 }
 /**
  * This function changes the current input into radians
- * @return {number} Returns the new currentInput
+ * @param {number} This is _____
+ * @return {return} This returns _____
  */
 function rad() {
     if (mode == "DEG") {
@@ -192,7 +200,8 @@ function rad() {
 }
 /**
  * This function changes the current input into degrees
- * @return {number} Returns the new currentInput
+ * @param {number} This is ____
+ * @return {return} This returns _____
  */
 function deg() {
     if (mode == "RAD") {
