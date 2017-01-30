@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calcuator Starter App</title>
+    <script src="calculator_start.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Calculator App</h1>
+    <form>
+        <p>
+            <input type="text" id="screen"> </p>
+        <p>
+            <button type="button" class="btn btn-danger btn-lg" onclick="allClear()">AC</button>
+            <button type="button" class="btn btn-danger btn-lg" onclick="clears()">C</button>
+            <button type="button" class="btn btn-warning btn-lg" onclick="deg()">deg</button>
+            <button type="button" class="btn btn-warning btn-lg" onclick="rad()">rad</button>
+            <button type="button" class="btn btn-warning btn-lg" onclick="changeSign()">+/-</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-primary btn-lg" onclick="addDigit('7')">7</button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="addDigit('8')">8</button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="addDigit('9')">9</button>
+            <button type="button" class="btn btn-info btn-lg" onclick="storeOperator('/')">/</button>
+            <button type="button" class="btn btn-warning btn-lg" onclick="percentage()">%</button>
+            <button type="button" class="btn btn-warning btn-lg" onclick="inverse()">1/x</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-primary btn-lg" onclick="addDigit('4')">4</button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="addDigit('5')">5</button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="addDigit('6')">6</button>
+            <button type="button" class="btn btn-info btn-lg" onclick="storeOperator('*')">x</button>
+            <button type="button" class="btn btn-warning btn-lg" onclick="factorial()">x!</button>
+            <button type="button" class="btn btn-warning btn-lg" onclick="tan()">tan</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-primary btn-lg" onclick="addDigit('1')">1</button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="addDigit('2')">2</button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="addDigit('3')">3</button>
+            <button type="button" class="btn btn-info btn-lg" onclick="storeOperator('-')">-</button>
+            <button type="button" class="btn btn-warning btn-lg" onclick="squareRoot()">√x</button>
+            <button type="button" class="btn btn-warning btn-lg" onclick="sin()">sin</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-primary btn-lg" onclick="addDigit('0')">0</button>
+            <button type="button" class="btn btn-info btn-lg" onclick="addDecimal()">.</button>
+            <button type="button" class="btn btn-success btn-lg" onclick="calculate()">=</button>
+            <button type="button" class="btn btn-info btn-lg" onclick="storeOperator('+')">+</button>
+            <button type="button" class="btn btn-warning btn-lg" onclick="square()">x²</button>
+            <button type="button" class="btn btn-warning btn-lg" onclick="cos()">cos</button>
+        </p>
+    </form>
+</body>
+
+</html>
