@@ -133,8 +133,7 @@ function factorial() {
 }
 /**
  * This function calculates the square of the current input
- * @param {number} This is _____
- * @return {return} This returns _____
+ * @return {number} Returns the new currentInput
  */
 function square() {
     currentInput = Math.pow(currentInput, 2);
@@ -142,8 +141,7 @@ function square() {
 }
 /**
  * This function calculates the square root of the current input
- * @param {number} This is _____
- * @return {return} This returns _____
+ * @return {number} Returns the new currentInput
  */
 function squareRoot() {
     currentInput = Math.sqrt(currentInput);
@@ -151,8 +149,7 @@ function squareRoot() {
 }
 /**
  * This function calculates the inverse of the current input
- * @param {number} This is _____
- * @return {return} This returns _____
+ * @return {number} Returns the new currentInput
  */
 function inverse() {
     currentInput = 1 / currentInput;
@@ -160,8 +157,7 @@ function inverse() {
 }
 /**
  * This function calculates the sine of the current input
- * @param {number} This is _____
- * @return {return} This returns _____
+ * @return {number} Returns the new currentInput
  */
 function sin() {
     currentInput = Math.sin(currentInput);
@@ -169,17 +165,14 @@ function sin() {
 }
 /**
  * This function calculates the cosine of the current input
- * @param {number} This is _____
- * @return {return} This returns _____
+ * @return {number} Returns the new currentInput
  */
 function cos() {
     currentInput = Math.cos(currentInput);
     displayCurrentInput();
 }
 /**
- * This function calculates the tangent of the current input
- * @param {number} This is _____
- * @return {return} This returns _____
+ * @return {number} Returns the new currentInput
  */
 function tan() {
     currentInput = Math.tan(currentInput);
@@ -187,8 +180,7 @@ function tan() {
 }
 /**
  * This function changes the current input into radians
- * @param {number} This is _____
- * @return {return} This returns _____
+ * @return {number} Returns the new currentInput
  */
 function rad() {
     if (mode == "DEG") {
@@ -200,8 +192,7 @@ function rad() {
 }
 /**
  * This function changes the current input into degrees
- * @param {number} This is _____
- * @return {return} This returns _____
+ * @return {number} Returns the new currentInput
  */
 function deg() {
     if (mode == "RAD") {
