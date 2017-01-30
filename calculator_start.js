@@ -52,8 +52,8 @@ function allClear() {
 }
 /**
  * This function stores the last operator pushed for multiply, divide, add, or subtract
- * @param {number} This is _____
- * @return {return} This returns _____
+ * @param {number} op       This is the operator that is being used
+ * @return {number} Returns the new currentInput
  */
 function storeOperator(op) {
     if (op.indexOf("*") > -1) {
@@ -172,6 +172,7 @@ function cos() {
     displayCurrentInput();
 }
 /**
+ * This function calculates the tangent of the current input
  * @return {number} Returns the new currentInput
  */
 function tan() {
